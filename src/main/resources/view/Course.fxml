@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="courseform" prefHeight="722.0" prefWidth="1540.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.Ijse.Controller.CourseController">
+<AnchorPane fx:id="courseform" prefHeight="722.0" prefWidth="1542.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.Ijse.Controller.CourseController">
    <children>
-      <Label layoutX="637.0" layoutY="32.0" text="Course Management" textFill="WHITE">
+      <Label layoutX="637.0" layoutY="32.0" text="Course Management" textFill="#575757">
          <font>
             <Font name="Arial Black" size="32.0" />
          </font>
@@ -19,7 +19,7 @@
          <font>
             <Font name="System Bold" size="15.0" />
          </font></JFXTextField>
-      <Label layoutX="509.0" layoutY="139.0" text="Course Name :" textFill="WHITE">
+      <Label layoutX="509.0" layoutY="139.0" text="Course Name :" textFill="#8a8a8a">
          <font>
             <Font name="Times New Roman Bold" size="18.0" />
          </font>
@@ -28,7 +28,7 @@
          <font>
             <Font name="System Bold" size="15.0" />
          </font></JFXTextField>
-      <Label layoutX="1063.0" layoutY="142.0" text="Duration :" textFill="WHITE">
+      <Label layoutX="1063.0" layoutY="142.0" text="Duration :" textFill="#8a8a8a">
          <font>
             <Font name="Times New Roman Bold" size="18.0" />
          </font>
@@ -41,9 +41,9 @@
          <font>
             <Font name="System Bold" size="15.0" />
          </font></JFXTextField>
-      <JFXButton fx:id="btnaddcourse" layoutX="529.0" layoutY="260.0" onAction="#btnaddcourseOnAction" prefHeight="38.0" prefWidth="108.0" style="-fx-background-color: #69d9f5;" text="Add Course ">
+      <JFXButton fx:id="btnaddcourse" layoutX="529.0" layoutY="260.0" onAction="#btnaddcourseOnAction" prefHeight="38.0" prefWidth="108.0" style="-fx-background-color: #69d9f5;" text="Add ">
          <font>
-            <Font name="Comic Sans MS" size="13.0" />
+            <Font name="Times New Roman Bold" size="16.0" />
          </font>
       </JFXButton>
       <TableView fx:id="tblcourse" layoutX="33.0" layoutY="400.0" onMouseClicked="#rowOnMouseClicked" prefHeight="295.0" prefWidth="1462.0">
@@ -58,32 +58,32 @@
          <font>
             <Font name="System Bold" size="15.0" />
          </font></JFXTextField>
-      <JFXButton fx:id="btnsearchcourse" layoutX="1386.0" layoutY="343.0" onAction="#btnsearchcourseOnAction" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: yellow;" text="Search 🔍">
+      <JFXButton fx:id="btnsearchcourse" layoutX="1386.0" layoutY="338.0" onAction="#btnsearchcourseOnAction" prefHeight="31.0" prefWidth="87.0" style="-fx-background-color: yellow;" text="Search">
          <font>
-            <Font name="Comic Sans MS" size="13.0" />
+            <Font name="Times New Roman Bold" size="14.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="btnclear" layoutX="939.0" layoutY="260.0" onAction="#btnclearOnAction" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: #faa302;" text="Clear ✨">
+      <JFXButton fx:id="btnclear" layoutX="939.0" layoutY="260.0" onAction="#btnclearOnAction" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: #faa302;" text="Clear ">
          <font>
-            <Font name="Comic Sans MS" size="13.0" />
+            <Font name="Times New Roman Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="btndelete" layoutX="669.0" layoutY="260.0" onAction="#btndeleteOnAction" prefHeight="38.0" prefWidth="87.0" style="-fx-background-color: #fc6060;" text="Delete 🗑">
+      <JFXButton fx:id="btndelete" layoutX="669.0" layoutY="260.0" onAction="#btndeleteOnAction" prefHeight="38.0" prefWidth="87.0" style="-fx-background-color: #fc6060;" text="Delete ">
          <font>
-            <Font name="Comic Sans MS" size="13.0" />
+            <Font name="Times New Roman Bold" size="16.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="btnupdate" layoutX="798.0" layoutY="260.0" onAction="#btnupdateOnAction" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: #89f768;" text="Update ⚙">
+      <JFXButton fx:id="btnupdate" layoutX="798.0" layoutY="260.0" onAction="#btnupdateOnAction" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: #89f768;" text="Update ">
          <font>
-            <Font name="Comic Sans MS" size="13.0" />
+            <Font name="Times New Roman Bold" size="17.0" />
          </font>
       </JFXButton>
-      <Label layoutX="77.0" layoutY="222.0" text="Fees :" textFill="WHITE">
+      <Label layoutX="77.0" layoutY="222.0" text="Fees :" textFill="#949494">
          <font>
             <Font name="Times New Roman Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="91.0" layoutY="138.0" prefHeight="20.0" prefWidth="94.0" text="Course ID :" textFill="WHITE">
+      <Label layoutX="91.0" layoutY="138.0" prefHeight="20.0" prefWidth="94.0" text="Course ID :" textFill="#808080">
          <font>
             <Font name="Times New Roman Bold" size="18.0" />
          </font>

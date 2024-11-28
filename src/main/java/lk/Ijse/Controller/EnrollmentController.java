@@ -388,31 +388,31 @@ public class EnrollmentController implements Initializable {
         return fee;
     }
 
-    @FXML
-    void btnsearchcourseOnAction(ActionEvent event) {
-        String searchText = txtsearchcourse.getText().toLowerCase();
-        ObservableList<EnrollmentTm> filteredList = FXCollections.observableArrayList();
+//    @FXML
+//    void btnsearchcourseOnAction(ActionEvent event) {
+//        String searchText = txtsearchcourse.getText().toLowerCase();
+//        ObservableList<EnrollmentTm> filteredList = FXCollections.observableArrayList();
+//
+//        for (EnrollmentTm enrollmentTm : observableList) {
+//            if (enrollmentTm.getCid().toLowerCase().contains(searchText)) {
+//                filteredList.add(enrollmentTm);
+//            }
+//        }
+//        tblenrollment.setItems(filteredList);
+//    }
 
-        for (EnrollmentTm enrollmentTm : observableList) {
-            if (enrollmentTm.getCid().toLowerCase().contains(searchText)) {
-                filteredList.add(enrollmentTm);
-            }
-        }
-        tblenrollment.setItems(filteredList);
-    }
-
-    @FXML
-    void btnsearchstudentOnAction(ActionEvent event) {
-        String searchText = txtsearchstudent.getText().toLowerCase();
-        ObservableList<EnrollmentTm> filteredList = FXCollections.observableArrayList();
-
-        for (EnrollmentTm enrollmentTm : observableList) {
-            if (enrollmentTm.getSid().toLowerCase().contains(searchText)) {
-                filteredList.add(enrollmentTm);
-            }
-        }
-        tblenrollment.setItems(filteredList);
-    }
+//    @FXML
+//    void btnsearchstudentOnAction(ActionEvent event) {
+//        String searchText = txtsearchstudent.getText().toLowerCase();
+//        ObservableList<EnrollmentTm> filteredList = FXCollections.observableArrayList();
+//
+//        for (EnrollmentTm enrollmentTm : observableList) {
+//            if (enrollmentTm.getSid().toLowerCase().contains(searchText)) {
+//                filteredList.add(enrollmentTm);
+//            }
+//        }
+//        tblenrollment.setItems(filteredList);
+//    }
     @FXML
     void txtsearchenrollmentOnAction(ActionEvent event) {
 

@@ -44,8 +44,8 @@ public class DashboardController implements Initializable {
     @FXML
     private JFXButton btnpayments;
 
-    @FXML
-    private JFXButton btnseeprofile;
+//    @FXML
+//    private JFXButton btnseeprofile;
 
     @FXML
     private JFXButton btnstudent;
@@ -103,7 +103,7 @@ public class DashboardController implements Initializable {
         btnenrollment.setVisible(true);
         btnlogout.setVisible(true);
         btnpayments.setVisible(true);
-        btnseeprofile.setVisible(true);
+//        btnseeprofile.setVisible(true);
         btnstudent.setVisible(true);
         btnuser.setVisible(true);
     }
@@ -114,7 +114,6 @@ public class DashboardController implements Initializable {
         btndashboard.setVisible(true);
         btnlogout.setVisible(true);
         btnpayments.setVisible(false);
-        btnseeprofile.setVisible(true);
         btnstudent.setVisible(true);
         btnenrollment.setVisible(true);
         btnuser.setVisible(false);
@@ -126,14 +125,13 @@ public class DashboardController implements Initializable {
         btnenrollment.setVisible(false);
         btnlogout.setVisible(false);
         btnpayments.setVisible(false);
-        btnseeprofile.setVisible(false);
         btnstudent.setVisible(false);
         btnuser.setVisible(false);
     }
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle){
-         originalMainformChildren = new ArrayList<>(mainform.getChildren());
-         setcounts();
+        originalMainformChildren = new ArrayList<>(mainform.getChildren());
+        setcounts();
     }
 
     public void setcounts(){
@@ -199,19 +197,6 @@ public class DashboardController implements Initializable {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Payment.fxml"));
             AnchorPane coursesPane = loader.load();
             mainform.getChildren().setAll(coursesPane);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @FXML
-    void btnseeprofileOnAction(ActionEvent event){
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Profile.fxml"));
-            AnchorPane profilePane = loader.load();
-            mainform.getChildren().setAll(profilePane);
-            ProfileController profileController = loader.getController();
-            profileController.setUserid(getUserid());
         } catch (IOException e) {
             e.printStackTrace();
         }

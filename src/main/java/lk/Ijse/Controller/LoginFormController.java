@@ -117,26 +117,26 @@ public class LoginFormController {
     void forgotpwonclick(MouseEvent event) throws Exception {
         String username  = txtUsername.getText().trim();
         if(!txtUsername.getText().isEmpty()){
-        User userByname = userBO.findUserByname(username);
-        if(userByname != null){
-        String email = userByname.getEmail();
+            User userByname = userBO.findUserByname(username);
+            if(userByname != null){
+                String email = userByname.getEmail();
 
-        if (true) {
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("Password Reset");
-            alert.setHeaderText(null);
-            alert.setContentText("Password reset link has been sent to your email.");
-            alert.showAndWait();
-        } else {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error");
-            alert.setHeaderText(null);
-            alert.setContentText("The provided email is not registered.");
-            alert.showAndWait();
-        }
-        }else {
-            new Alert(Alert.AlertType.ERROR, "Username does not exist! Please check your username.").show();
-        }
+                if (true) {
+                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                    alert.setTitle("Password Reset");
+                    alert.setHeaderText(null);
+                    alert.setContentText("Password reset link has been sent to your email.");
+                    alert.showAndWait();
+                } else {
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setTitle("Error");
+                    alert.setHeaderText(null);
+                    alert.setContentText("The provided email is not registered.");
+                    alert.showAndWait();
+                }
+            }else {
+                new Alert(Alert.AlertType.ERROR, "Username does not exist! Please check your username.").show();
+            }
         }else {
             new Alert(Alert.AlertType.ERROR, "Username feild is empty!give username to reset password").show();
 

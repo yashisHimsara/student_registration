@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="userform" prefHeight="722.0" prefWidth="1540.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.Ijse.Controller.UserController">
+<AnchorPane fx:id="userform" prefHeight="722.0" prefWidth="1540.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.Ijse.Controller.UserController">
    <children>
       <AnchorPane layoutX="28.0" layoutY="98.0" prefHeight="299.0" prefWidth="1446.0" style="-fx-background-color: rgba(0,0,0,0.5);">
          <children>

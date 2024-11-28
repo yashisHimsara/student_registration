@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="paymentform" prefHeight="722.0" prefWidth="1540.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.Ijse.Controller.PaymentController">
+<AnchorPane fx:id="paymentform" prefHeight="722.0" prefWidth="1540.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.Ijse.Controller.PaymentController">
    <children>
-      <AnchorPane layoutX="24.0" layoutY="113.0" prefHeight="278.0" prefWidth="1420.0" style="-fx-background-color: rgba(0,0,0,0.5);">
+      <AnchorPane layoutX="24.0" layoutY="113.0" prefHeight="278.0" prefWidth="1420.0" style="-fx-background-color: #222222">
          <children>
             <JFXButton fx:id="btnaddpayment" layoutX="463.0" layoutY="114.0" onAction="#btnaddpaymentOnAction" prefHeight="37.0" prefWidth="107.0" style="-fx-background-color: #69d9f5;" text="Add Payment ">
                <font>

@@ -9,17 +9,16 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="loginform" prefHeight="600.0" prefWidth="908.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.Ijse.Controller.LoginFormController">
+<AnchorPane fx:id="loginform" prefHeight="600.0" prefWidth="813.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.Ijse.Controller.LoginFormController">
    <children>
-      <AnchorPane layoutX="264.0" layoutY="51.0" prefHeight="494.0" prefWidth="441.0" style="-fx-background-color: black;" styleClass="box" stylesheets="@../style/styel.css">
+      <AnchorPane layoutX="186.0" layoutY="53.0" prefHeight="494.0" prefWidth="441.0" style="-fx-background-color: #e67e22;" styleClass="box" stylesheets="@../style/styel.css">
          <opaqueInsets>
             <Insets top="25.0" />
          </opaqueInsets>
          <children>
-            <Label layoutX="105.0" layoutY="15.0" prefHeight="74.0" prefWidth="246.0" text="LogIn Form" textFill="#46c635">
+            <Label layoutX="108.0" layoutY="16.0" prefHeight="74.0" prefWidth="246.0" text="LogIn Form">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -32,55 +31,37 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
                <font>
-                  <Font name="Times New Roman Bold" size="13.0" />
+                  <Font name="Times New Roman Bold" size="18.0" />
                </font>
             </Label>
+            <JFXTextField fx:id="txtUsername" focusColor="#ffdc00" layoutX="53.0" layoutY="131.0" onKeyReleased="#txtUsernameOnKeyReleased" prefHeight="34.0" prefWidth="282.0" styleClass="usernamePassword" stylesheets="@../style/styel.css" unFocusColor="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtPassword1" focusColor="WHITE" labelFloat="true" layoutX="51.0" layoutY="195.0" prefHeight="40.0" prefWidth="282.0" styleClass="usernamePassword" stylesheets="@../style/styel.css" unFocusColor="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtPassword2" focusColor="#ffdc00" layoutX="57.0" layoutY="195.0" onKeyReleased="#txtPassword2OnKeyReleased" prefHeight="40.0" prefWidth="282.0" styleClass="usernamePassword" stylesheets="@../style/styel.css" unFocusColor="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="17.0" />
+               </font>
+            </JFXPasswordField>
+            <Button layoutX="81.0" layoutY="386.0" mnemonicParsing="false" onAction="#btnSignUpOnAction" prefHeight="47.0" prefWidth="282.0" style="-fx-background-color: gray;" styleClass="LoginBtn" stylesheets="@../style/styel.css" text=" SignUp" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="23.0" />
+               </font>
+            </Button>
+            <Button layoutX="80.0" layoutY="301.0" mnemonicParsing="false" onAction="#btnLogInOnAction" prefHeight="47.0" prefWidth="282.0" style="-fx-background-color: gray;" styleClass="LoginBtn" stylesheets="@../style/styel.css" text="   LogIn" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="21.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
-      <JFXTextField fx:id="txtUsername" focusColor="#ffdc00" layoutX="319.0" layoutY="189.0" onKeyReleased="#txtUsernameOnKeyReleased" prefHeight="34.0" prefWidth="282.0" styleClass="usernamePassword" stylesheets="@../style/styel.css" unFocusColor="WHITE">
-         <font>
-            <Font name="Comic Sans MS" size="17.0" />
-         </font>
-      </JFXTextField>
-      <JFXTextField fx:id="txtPassword1" focusColor="WHITE" labelFloat="true" layoutX="317.0" layoutY="253.0" prefHeight="40.0" prefWidth="282.0" styleClass="usernamePassword" stylesheets="@../style/styel.css" unFocusColor="WHITE">
-         <font>
-            <Font name="Comic Sans MS" size="17.0" />
-         </font>
-      </JFXTextField>
-      <JFXPasswordField fx:id="txtPassword2" focusColor="#ffdc00" layoutX="315.0" layoutY="253.0" onKeyReleased="#txtPassword2OnKeyReleased" prefHeight="40.0" prefWidth="282.0" styleClass="usernamePassword" stylesheets="@../style/styel.css" unFocusColor="WHITE">
-         <font>
-            <Font name="Comic Sans MS" size="17.0" />
-         </font>
-      </JFXPasswordField>
-      <Label layoutX="411.0" layoutY="312.0" onMouseClicked="#forgotpwonclick" text="Forgot Password?" textFill="#ffd103">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-         <font>
-            <Font name="Comic Sans MS" size="13.0" />
-         </font>
-      </Label>
-      <Button layoutX="322.0" layoutY="363.0" mnemonicParsing="false" onAction="#btnLogInOnAction" prefHeight="34.0" prefWidth="282.0" styleClass="LoginBtn" stylesheets="@../style/styel.css" text="   LogIn" textFill="WHITE">
-         <font>
-            <Font name="Comic Sans MS Bold" size="17.0" />
-         </font>
-      </Button>
-      <Line endX="5.0" endY="-19.0" layoutX="447.0" layoutY="451.0" startX="-114.0" startY="-19.0" stroke="WHITE" strokeWidth="2.0" />
-      <Button layoutX="323.0" layoutY="466.0" mnemonicParsing="false" onAction="#btnSignUpOnAction" prefHeight="34.0" prefWidth="282.0" styleClass="LoginBtn" stylesheets="@../style/styel.css" text=" SignUp" textFill="WHITE">
-         <font>
-            <Font name="Comic Sans MS Bold" size="17.0" />
-         </font>
-      </Button>
-      <Label layoutX="462.0" layoutY="424.0" text="OR" textFill="WHITE">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-         <font>
-            <Font name="Comic Sans MS" size="13.0" />
-         </font>
-      </Label>
-      <Line endX="5.0" endY="-19.0" layoutX="605.0" layoutY="451.0" startX="-114.0" startY="-19.0" stroke="WHITE" strokeWidth="2.0" />
-      <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="568.0" layoutY="264.0" onMousePressed="#showPasswordOnMousePresseds" onMouseReleased="#showPasswordOnMouseReleased" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="503.0" layoutY="264.0" onMousePressed="#showPasswordOnMousePresseds" onMouseReleased="#showPasswordOnMouseReleased" pickOnBounds="true" preserveRatio="true">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -88,12 +69,12 @@
             <Image url="@../assest/eye.png" />
          </image>
       </ImageView>
-      <Label layoutX="317.0" layoutY="241.0" text="Password" textFill="WHITE">
+      <Label layoutX="247.0" layoutY="241.0" text="Password" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
          <font>
-            <Font name="Comic Sans MS" size="13.0" />
+            <Font name="Times New Roman Bold" size="20.0" />
          </font>
       </Label>
    </children>

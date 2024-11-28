@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="enrollmentform" prefHeight="722.0" prefWidth="1540.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.Ijse.Controller.EnrollmentController">
+<AnchorPane fx:id="enrollmentform" prefHeight="722.0" prefWidth="1540.0" style="-fx-background-color: #222222;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.Ijse.Controller.EnrollmentController">
    <children>
-      <AnchorPane layoutX="24.0" layoutY="107.0" prefHeight="289.0" prefWidth="1486.0" style="-fx-background-color: rgba(0,0,0,0.5);">
+      <AnchorPane layoutX="24.0" layoutY="107.0" prefHeight="289.0" prefWidth="1486.0" style="-fx-background-color: #222222">
          <children>
             <JFXButton fx:id="btnaddenrollment" layoutX="1249.0" layoutY="10.0" onAction="#btnaddenrollmentOnAction" prefHeight="32.0" prefWidth="207.0" style="-fx-background-color: #69d9f5;" text="Add Enrollment">
                <font>
@@ -52,11 +52,6 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXTextField>
-      <JFXButton fx:id="btnsearchstudent" layoutX="146.0" layoutY="354.0" onAction="#btnsearchstudentOnAction" prefHeight="27.0" prefWidth="106.0" style="-fx-background-color: yellow;" text="Student Id ">
-         <font>
-            <Font name="Comic Sans MS" size="13.0" />
-         </font>
-      </JFXButton>
       <Label layoutX="441.0" layoutY="185.0" text="Course Name : " textFill="WHITE">
          <font>
             <Font name="Comic Sans MS" size="18.0" />
@@ -77,11 +72,6 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXTextField>
-      <JFXButton fx:id="btnsearchcourse" layoutX="414.0" layoutY="356.0" onAction="#btnsearchcourseOnAction" prefHeight="27.0" prefWidth="106.0" style="-fx-background-color: yellow;" text="Course Id ">
-         <font>
-            <Font name="Comic Sans MS" size="13.0" />
-         </font>
-      </JFXButton>
       <Label layoutX="571.0" layoutY="14.0" text="Enrollment Management" textFill="WHITE">
          <font>
             <Font name="Comic Sans MS" size="32.0" />
