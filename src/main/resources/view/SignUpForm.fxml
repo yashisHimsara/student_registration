@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="signupform" prefHeight="600.0" prefWidth="1211.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.Ijse.Controller.SignUpFormController">
+   <children>
+      <AnchorPane layoutX="483.0" layoutY="22.0" prefHeight="562.0" prefWidth="398.0" style="-fx-background-color: black;" styleClass="box" stylesheets="@../style/styel.css">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Label layoutX="73.0" layoutY="-8.0" prefHeight="74.0" prefWidth="270.0" text="SignUp Form" textFill="#13c34d">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Comic Sans MS Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="89.0" onMouseClicked="#lblHaveAccountOnMouseClicked" text="User Id" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Comic Sans MS" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="218.0" onMouseClicked="#lblHaveAccountOnMouseClicked" text="Password" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Comic Sans MS" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="278.0" onMouseClicked="#lblHaveAccountOnMouseClicked" prefHeight="19.0" prefWidth="101.0" text="Re - Password" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Comic Sans MS" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="68.0" layoutY="339.0" onMouseClicked="#lblHaveAccountOnMouseClicked" text="Email" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Comic Sans MS" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="401.0" onMouseClicked="#lblHaveAccountOnMouseClicked" text="Role" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Comic Sans MS" size="13.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="txtrole" editable="true" focusColor="#ffdc00" layoutX="68.0" layoutY="425.0" onAction="#txtroleOnAction" prefHeight="26.0" prefWidth="282.0" styleClass="text-field" stylesheets="@../style/styel.css" unFocusColor="WHITE" />
+         </children>
+      </AnchorPane>
+      <JFXTextField fx:id="txtUserID" editable="false" focusColor="#ffdc00" labelFloat="true" layoutX="550.0" layoutY="126.0" prefHeight="32.0" prefWidth="282.0" styleClass="usernamePassword" stylesheets="@../style/styel.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtUsername" focusColor="#ffdc00" labelFloat="true" layoutX="550.0" layoutY="189.0" onKeyReleased="#txtUsernameOnKeyReleased" prefHeight="32.0" prefWidth="282.0" styleClass="usernamePassword" stylesheets="@../style/styel.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPassword1" focusColor="#ffdc00" labelFloat="true" layoutX="550.0" layoutY="254.0" prefHeight="32.0" prefWidth="282.0" styleClass="usernamePassword" stylesheets="@../style/styel.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtPassword2" focusColor="#ffdc00" labelFloat="true" layoutX="550.0" layoutY="253.0" onKeyReleased="#txtPassword2OnKeyReleased" prefHeight="32.0" prefWidth="282.0" styleClass="usernamePassword" stylesheets="@../style/styel.css" unFocusColor="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="799.0" layoutY="256.0" onMousePressed="#showPasswordOnMousePresseds" onMouseReleased="#showPasswordOnMouseReleased" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@../assest/eye.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="550.0" layoutY="523.0" mnemonicParsing="false" onAction="#btnSignUpOnAction" prefHeight="34.0" prefWidth="282.0" styleClass="LoginBtn" stylesheets="@../style/styel.css" text="SignUp" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="17.0" />
+         </font>
+      </Button>
+      <JFXTextField fx:id="txtRePassword1" focusColor="#ffdc00" labelFloat="true" layoutX="550.0" layoutY="313.0" prefHeight="32.0" prefWidth="282.0" styleClass="usernamePassword" stylesheets="@../style/styel.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtRePassword2" focusColor="#ffdc00" labelFloat="true" layoutX="550.0" layoutY="313.0" onKeyReleased="#txtRePassword2OnKeyReleased" prefHeight="32.0" prefWidth="282.0" styleClass="usernamePassword" stylesheets="@../style/styel.css" unFocusColor="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="799.0" layoutY="317.0" onMousePressed="#showPassword2OnMousePresseds" onMouseReleased="#showPassword2OnMouseReleased" pickOnBounds="true" preserveRatio="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <image>
+            <Image url="@../assest/eye.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="641.0" layoutY="492.0" onMouseClicked="#lblHaveAccountOnMouseClicked" text="I have an account" textFill="#ffd103">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUserEmail" focusColor="#ffdc00" labelFloat="true" layoutX="550.0" layoutY="375.0" onKeyReleased="#txtUserEmailOnKeyReleased" prefHeight="32.0" prefWidth="282.0" styleClass="usernamePassword" stylesheets="@../style/styel.css" unFocusColor="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="550.0" layoutY="173.0" onMouseClicked="#lblHaveAccountOnMouseClicked" text="User Name" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
